@@ -19,7 +19,7 @@ Built using **Express.js** and **MongoDB**. It provides APIs for user authentica
 
 ---
 
-## 📌 API Routes  
+## 📌 Backend API Routes  
 
 ### 🔐 User Authentication (`/api/v1/user`)  
 | Method | Route | Description |
@@ -103,5 +103,63 @@ PAYMENT_KEY=your_payment_gateway_key
 npm start
 ```
 The API will be running at `http://localhost:5000`.
+
+---
+
+---
+
+### **🚀Frontend Routes**
+
+
+### **🚀 Public Routes (Accessible to All Users)**  
+These routes can be accessed without logging in.  
+
+🔹 **Home Page** → `/`  
+🔹 **About Page** → `/about`  
+🔹 **Browse Courses** → `/courses`  
+🔹 **Register a New Account** → `/register`  
+🔹 **Login to Your Account** → `/login`  
+🔹 **Forgot Password** → `/forgot/password`  
+🔹 **Reset Password (via Email Token)** → `/reset/password/:resetToken`  
+
+---
+
+### **🔐 User Routes (Only Accessible After Login)**  
+Once logged in, users gain access to these features:  
+
+ **View Profile** → `/user/profile`  
+ **Edit Profile** → `/user/edit-profile`  
+ **Change Password** → `/user/change-password`  
+ **View a Specific Course** → `/course/:courseId`  
+ **View Purchased Courses** → `/user/courses`  
+
+---
+
+### **🛠️ Admin Routes (Only Accessible by Admins)**  
+Admins have additional privileges to manage courses and platform data:  
+
+🔹 **Create a New Course** → `/course/create`  
+🔹 **Update Course Details** → `/course/update`  
+🔹 **Add Lecture to Course** → `/course/lecture/add`  
+🔹 **Update Lecture Content** → `/course/lecture/update`  
+🔹 **Admin Dashboard** → `/admin/dashboard`  
+
+---
+
+### **💳 Payment Gateway (For Course Purchases)**  
+Users can securely purchase courses through these routes:  
+
+🔹 **Proceed to Checkout** → `/checkout`  
+🔹 **Payment Successful** → `/payment/success`  
+🔹 **Payment Failed** → `/payment/failure`  
+
+---
+
+### **⚠️ Error Handling**  
+If something goes wrong, the system provides appropriate error responses:  
+
+ **Page Not Found (404)** → `*`  
+ **Access Denied (403 - Unauthorized Access)** → `/denied`  
+ **Internal Server Error (500)** → `/error`  
 
 ---
