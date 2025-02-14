@@ -1,7 +1,3 @@
-Here's a well-structured and easy-to-understand **README** file for your project:  
-
----
-
 # 🎓 Learning Management Platform (LMP)  
 Built using **Express.js** and **MongoDB**. It provides APIs for user authentication, course management, user progress tracking, payments, and admin analytics.  
 
