@@ -74,39 +74,6 @@ Built using **Express.js** and **MongoDB**. It provides APIs for user authentica
 
 ---
 
-## 🔧 Installation & Setup  
-
-### 1️⃣ Clone the Repository  
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-```
-
-### 2️⃣ Install Dependencies  
-```bash
-npm install
-```
-
-### 3️⃣ Set Up Environment Variables  
-Create a `.env` file and add the following:  
-```env
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-SMTP_USER=your_smtp_email
-SMTP_PASS=your_smtp_password
-PAYMENT_KEY=your_payment_gateway_key
-```
-
-### 4️⃣ Run the Server  
-```bash
-npm start
-```
-The API will be running at `http://localhost:5000`.
-
----
-
----
 
 ### **🚀Frontend Routes**
 
